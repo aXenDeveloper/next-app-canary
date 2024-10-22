@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const generateMetadata = async (): Promise<Metadata> => {
   await fetch("http://localhost:8080/graphql", {
-    cache: "force-cache"
+    cache: "no-cache"
   });
 
   return {
